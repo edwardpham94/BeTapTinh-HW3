@@ -53,18 +53,25 @@ function calculate() {
     value = " ";
     valueAnncount = "Bạn chưa chọn phép tính";
   } else {
-    valueAnncount = "Dễ vậy cũng tính!!! :>";
     switch (operation) {
       case "+":
+        valueAnncount = "Dễ ẹt! :>";
+
         value = n1 + n2;
         break;
       case "-":
+        valueAnncount = "Khó hơn đi! :>";
+
         value = n1 - n2;
         break;
       case "*":
+        valueAnncount = "Dễ vậy cũng tính! :>";
+
         value = n1 * n2;
         break;
       case "/":
+        valueAnncount = "Khó chút nữa ikk! :>";
+
         value = n1 / n2;
         break;
     }
