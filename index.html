@@ -1,0 +1,122 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bao Pham Hong Gia</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+    <script src="./js/main.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="title">BÉ TẬP TÍNH</div>
+      <div class="row">
+        <div class="col-10">
+          <form action="#">
+            <div class="user-details">
+              <div style="display: flex" class="input-box">
+                <div class="col-3 title-box">
+                  <span class="details">Số thứ nhất</span>
+                </div>
+                <div class="col-9">
+                  <input
+                    id="number1"
+                    type="text"
+                    placeholder="Nhập số thứ nhất"
+                    required
+                    onblur="validateNumberInput(this)"
+                  />
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <form action="#">
+            <div class="user-details">
+              <div style="display: flex" class="input-box">
+                <div class="col-3 title-box">
+                  <span class="details">Số thứ hai</span>
+                </div>
+                <div class="col-9">
+                  <input
+                    id="number2"
+                    type="text"
+                    placeholder="Nhập số thứ hai"
+                    required
+                    onblur="validateNumberInput(this)"
+                  />
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <form action="#">
+            <div class="user-details">
+              <div style="display: flex" class="input-box">
+                <div class="col-3 title-box">
+                  <span class="details">Kết quả</span>
+                </div>
+                <div class="col-9">
+                  <div class="result-box" id="result-box"></div>
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <form action="#">
+            <div class="user-details">
+              <div style="display: flex" class="input-box">
+                <div class="col-3 title-box">
+                  <span class="details">Thông báo</span>
+                </div>
+                <div class="col-9">
+                  <div
+                    style="color: red"
+                    class="result-box"
+                    id="announce-box"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-2">
+          <div class="option-cal">
+            <input id="option-one" name="radio" value="+" type="radio" />
+            <label for="option-one"> <span></span> Cộng </label>
+          </div>
+          <div class="option-cal">
+            <input id="option-two" name="radio" value="-" type="radio" />
+            <label for="option-two"> <span></span> Trừ </label>
+          </div>
+          <div class="option-cal">
+            <input id="option-three" name="radio" value="*" type="radio" />
+            <label for="option-three"> <span></span> Nhân </label>
+          </div>
+          <div class="option-cal">
+            <input id="option-four" name="radio" value="/" type="radio" />
+            <label for="option-four"> <span></span> Chia </label>
+          </div>
+        </div>
+      </div>
+      <div class="button" onclick="calculate();">
+        <input type="submit" value="Tính toán" />
+      </div>
+    </div>
+  </body>
+</html>
